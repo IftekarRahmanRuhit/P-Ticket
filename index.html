@@ -19,11 +19,14 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'btn-primary': '#ABEF5F',
+                'btn-primary': '#1DD1001A',
+                'primary-color': '#1DD100',
+                'text-primary': '#030712B3',
+                'text-secondary': '#030712',
  
               },
               backgroundImage: {
-                project_bg: "url('')",
+                banner_bg: "url('./images/banner.png')",
                 
               }
             }
@@ -33,9 +36,40 @@
     <title>P-Ticket</title>
 </head>
 <body class="font-raleway">
+
+  <!-- header section start  -->
+  <header class=" w-4/5 mx-auto mt-12 max-w-screen-2xl">
+    <!-- navbar section  -->
+     <nav class="flex justify-between items-center mb-7">
+      <div>
+        <h3 class="text-secondary text-3xl font-extrabold">P-Ticket</h3>
+      </div>
+
+      <div class=" hidden md:flex gap-9 font-medium text-text-primary">
+        <a class="hover:text-primary-color hover:underline cursor-pointer" href="">Home</a>
+        <a class="hover:text-primary-color hover:underline cursor-pointer href="">About</a>
+        <a class="hover:text-primary-color hover:underline cursor-pointer href="">Destination</a>
+        <a class="hover:text-primary-color hover:underline cursor-pointer href="">Search</a>
+      </div>
+      <div class="hidden md:flex">
+        <button class="flex bg-btn-primary px-5 py-3 rounded-lg gap-2 text-primary-color  font-bold hover:shadow-lg">Bus <img class="" src="./images/bus-icon.png" alt=""></button>
+      </div>
+
+      <div class=" md:hidden bg-btn-primary rounded-full px-4 py-3">
+        <i class="fa-solid fa-bars" style="color: #1dd100;"></i>
+      </div>
+
+     </nav>
+
+     <!-- banner-section  -->
+
     
 
 
+  </header>
+    
+
+  
 
 
 
